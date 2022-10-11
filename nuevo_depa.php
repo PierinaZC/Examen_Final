@@ -12,9 +12,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
     $sql = "INSERT INTO `departamentos`( `titulo`, `precio`, `descripcion`, 
-    `habitaciones`, `estacionamiento`, `estado`) 
+    `habitaciones`, `estacionamiento`) 
     VALUES ('$titulo','$precio','$descripcion','$habitaciones',
-    '$estacionamiento','1')";
+    '$estacionamiento')";
 
 $resultado = $db->query($sql);
 if($resultado){
